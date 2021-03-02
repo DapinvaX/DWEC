@@ -23,13 +23,18 @@ $pacientes = mysqli_query($con,$sql);
 
                 <tr>
                     <th>Nombre</th>
+                    <th>Primer Apellido</th>
+                    <th>Segundo Apellido</th>
+                    <th>DNI</th>
                     <th>Dirección</th>
+                    <th>Teléfono</th>
                 </tr>";
 
                     while($paciente = mysqli_fetch_array($pacientes )) {
 
                     echo "<tr>";
                         echo "<td>" . $paciente ['nombre'] . "</td>";
+                        
                         echo "<td>" . $paciente ['direccion'] . "</td>";
                         echo "<td>" . $paciente ['edad'] . "</td>";
                         echo "<td>" . $paciente ['localidad'] . "</td>";

@@ -2,6 +2,7 @@
 
 
     require("conexion.php");
+    require("cargarDatos.php");
     //Recupero las variables que me llegan por el metodo post
     //$nombre = $_POST['nombre];
     class datos{
@@ -24,6 +25,7 @@
         
             }
         }
+    
         
     
             //$paciente = new Paciente ();
@@ -44,6 +46,7 @@
                 $sql = 'INSERT INTO pacientes (id, nom, ape1, ape2, dni);';
     
                 }
+        }
     
                 /*
                 
@@ -73,8 +76,8 @@ function modificarPaciente(){
 function eliminarPaciente(){
                     $sql= "DELETE pacientes WHERE id=?";
                 }
-    
-    }
-   
+            
+            }
+        
 
 ?>

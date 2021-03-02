@@ -1,0 +1,18 @@
+<div id="formulario">
+        <form action="/PHP+AJAX/altaPacient.php" method="POST">
+          
+            <label for="nom">Nombre: </label><br>
+            <input type="text" id="txnom" name="txnom"><br>
+            <label for="ape1">Primer apellido:</label><br>
+            <input type="text" id="txape1" name="txape1"><br>
+            <label for="ape2">Segundo apellido:</label><br>
+            <input type="text" id="txape2" name="txape2"><br>
+            <label for="dni">DNI:</label><br>
+            <input type="text" id="txdni" name="txdni"><br>
+            <label for="dir">Dirección:</label><br>
+            <input type="text" id="txdir" name="txdir"><br>
+            <label for="tlf">Teléfono:</label><br>
+            <input type="tel" id="txtlf" name="txtlf"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="txemail" name="txemail"><br> 
+            <input type="hidden" id="accion" name="accion" value="alta"><br>
